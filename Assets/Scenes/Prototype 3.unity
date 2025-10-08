@@ -271,7 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMin: 20
   xMax: 100
-  timeInterval: 5
+  timeInterval: 7
   Objects:
   - {fileID: 5777085507024758622, guid: 30434fa6c15b047499ca260dbe20b24b, type: 3}
 --- !u!4 &171095420
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 2014335012}
   m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
