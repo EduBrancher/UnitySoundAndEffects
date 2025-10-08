@@ -30,6 +30,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void OnCollisionEnter(Collision other) {
-        isGrounded = true;
+        if (other.gameObject.CompareTag("Ground")) {
+            isGrounded = true;    
+        }
+
+        if (other.gameObject.CompareTag("Obstacle")) {
+            Debug.Log("Game Over!");
+            EventHub.RaisePlayerGameOver();
+            Destroy(gameObject);
+        }
     }
 }
